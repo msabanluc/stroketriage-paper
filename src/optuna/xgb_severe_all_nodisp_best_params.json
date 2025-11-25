@@ -1,0 +1,11 @@
+{
+    "n_estimators": 350,
+    "eta": 0.12328961346479705,
+    "gamma": 1.7000000000000002,
+    "max_depth": 9,
+    "reg_lambda": 9.981516327740573,
+    "scale_pos_weight": 1.095884211947701,
+    "min_child_weight": 9,
+    "subsample": 0.6075995899401607,
+    "colsample_bytree": 0.8894861744373158
+}

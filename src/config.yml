@@ -1,0 +1,59 @@
+project_name: "stroketriage"
+# Root directory for the project. If you have a different setup, you might need to adjust this. For this project, we assume the script is run from the `src` directory.
+root: ".."
+# Directory to load and save trained models
+model_dir: "src/optuna"
+# Directory to save evaluation outputs
+output_dir: "src/outputs"
+# Directory for figures
+figure_dir: "src/figures"
+# Directory for data splits.
+split_dir: #YOUR PATH HERE# 
+# Directory for raw data. 
+data_dir: #YOUR PATH HERE#
+
+# Specific data files
+paths:
+  ph2: #DATA PATH HERE#
+  geo: #GEOCODE PATH HERE#
+  adi: #ADI PATH HERE#
+  fdc_desc: #FDC DESCRIPTION PATH HERE#
+  noc: #NATURE OF CALL PATH HERE#
+  prior: #PRIORITIES CODES PATH HERE#
+
+# Cohort selection for analysis. Options:
+# "full": Full cohort
+# "cpss": EMS-suspected cohort (CPSS performed)
+# "stroke_relevant": Stroke mimic cohort
+data_mode: "full"
+
+# Whether to drop dispatch variables from the feature set
+drop_dispatch: false
+
+
+# Label type for classification. Options:
+# "stroke": Any stroke vs. no stroke
+# "severe": Severe stroke vs. non-severe/no stroke
+label_type: "stroke"
+
+# Whether to retune the models using Optuna. If false, loads from existing study.
+retune_models: false
+
+# Whether to retrain models using best parameters from Optuna study.
+retrain_models: true
+
+# Number of trials for Optuna hyperparameter tuning
+n_trials: 1000
+
+
+# Random seed for reproducibility
+random_seed: 2023
+
+# Path to flowsheet data CSV
+flowsheet_data_path: #FLOWSHEET DATA PATH HERE#
+
+# Settings for ED measures analysis. Curent dates used are from the original study. Adjust as needed.
+analysis_settings:
+  start_date: "2015-01-01"
+  end_date: "2020-12-31"
+

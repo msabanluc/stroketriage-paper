@@ -1,0 +1,22 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Data & artifacts
+*.csv
+*.db
+
+# IDE / editor
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+#Other
+stroketriage.egg-info/

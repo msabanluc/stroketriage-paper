@@ -1,0 +1,9 @@
+{
+    "n_hidden": 1,
+    "n_neurons": 350,
+    "dropout": 0.15000000000000002,
+    "eta": 0.0735142757338269,
+    "batch_size": 64,
+    "class_weight_0": 0.9,
+    "class_weight_1": 22.0
+}
