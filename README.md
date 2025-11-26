@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/1104226102.svg)](https://doi.org/10.5281/zenodo.17727868)
+
+
 # Machine Learning Models Powered by Emergency Medical Services Data Enhance Stroke Triage in Prehospital Settings
 
 This repository contains the source code and models for our [paper](https://www.researchsquare.com/article/rs-6736104/v1) It allows for the full reproduction of the paper's results and provides a framework for applying our models to new prehospital datasets.
